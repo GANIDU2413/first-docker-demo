@@ -12,8 +12,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Docker-demo</h1>
-      <p>demo for group 5</p>
+      <h1>Docker-Using-with-AWS-ec2</h1>
       
       
     </>

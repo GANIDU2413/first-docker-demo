@@ -1,20 +1,21 @@
-import reactLogo from "./assets/react.svg";
-import "./App.css";
-import { Link } from "react-router-dom";
+// Import styles of packages that you've installed.
+// All packages except `@mantine/hooks` require styles imports
+import '@mantine/core/styles.css';
 
-function App() {
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank"></a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Docker-Using-with-AWS-ec2</h1>
-      <Link to="/page">Go to page 02</Link>
-    </>
-  );
+import { MantineProvider } from '@mantine/core';
+import TableSelection from './TableSelection.module';
+// import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+export default function App() {
+  return <MantineProvider>{
+      // <BrowserRouter>
+      // <Routes>
+      //   <Route></Route>
+      // </Routes>
+      // </BrowserRouter>
+
+        <TableSelection></TableSelection>
+
+
+    }</MantineProvider>;
 }
-
-export default App;
